@@ -9,23 +9,31 @@ Template for running both django and react.
     ```
     python -m venv venv
     ```
-2) Install python pachages
+2) Activate virtual environment
+    ```
+    # for Mac OS / Linux
+    source venv/Scripts/activate
+
+    :: for Windows
+    venv\Scripts\activate
+    ```
+3) Install python pachages
     ```
     pip install -r requirements.txt
     ```
-3) Build server. This will create files in the build folder.
+4) Build server. This will create files in the build folder.
     ```
     python manage.py collectstatic
     ```
-4) Install node packages
+5) Install node packages
     ```
     yarn install
     ```
-5) Build react. This will create files also in the build folder.
+6) Build react. This will create files also in the build folder.
     ```
     yarn build
     ```
-6) Run server
+7) Run server
     ```
     python manage.py runserver
     ```
